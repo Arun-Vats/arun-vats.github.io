@@ -2,14 +2,26 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Your Name - Portfolio Profile</title>
-    <style>
-  /* Set the font and background color */
+    <title>Arun Sharma - Portfolio Profile</title>
+   <style>
+  /* Set the default font and background color */
   body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
   }
-
+  
+  /* Create a class for the light mode */
+  .light-mode {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  /* Create a class for the dark mode */
+  .dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
   /* Style the header */
   header {
     display: flex;
@@ -17,12 +29,22 @@
     align-items: center;
     padding: 20px;
   }
-
+  
   header h1 {
     font-size: 36px;
     margin: 0;
   }
-
+  
+  /* Style the toggle button */
+  .toggle-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  
   /* Style the navigation menu */
   nav ul {
     display: flex;
@@ -30,7 +52,7 @@
     margin: 0;
     padding: 0;
   }
-
+  
   nav a {
     display: block;
     padding: 10px 20px;
@@ -38,24 +60,24 @@
     text-decoration: none;
     color: #333;
   }
-
+  
   /* Style the main content */
   main {
     padding: 20px;
   }
-
+  
   /* Style the sections */
   section {
     margin-bottom: 40px;
   }
-
+  
   /* Style the contact form */
   form {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
+  
   form label,
   form input[type="submit"],
   form textarea {
@@ -65,26 +87,26 @@
     box-sizing: border-box;
     margin-bottom: 20px;
   }
-
+  
   form input[type="text"],
   form input[type="email"] {
     background-color: #fff;
     border: 1px solid #ddd;
   }
-
+  
   form textarea {
     background-color: #fff;
     border: 1px solid #ddd;
     height: 200px;
   }
-
+  
   form input[type="submit"] {
     background-color: #333;
     color: #fff;
     border: none;
     cursor: pointer;
   }
-
+  
   /* Style the footer */
   footer {
     text-align: center;
