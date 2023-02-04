@@ -2,33 +2,104 @@
 <html>
   <head>
     <title>Arun Sharma</title>
-    <style>
-      /* Add your CSS styles here */
-      .header {
-        background-color: lightgray;
-        padding: 20px;
-        text-align: center;
-      }
+ <style>
+  /* Add your CSS styles here */
+  * {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
 
-      .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background-color: darkgray;
-        color: white;
-      }
+  .header {
+    background-color: lightgray;
+    padding: 50px;
+    text-align: center;
+  }
 
-      .navbar a {
-        color: white;
-        text-decoration: none;
-        margin-right: 20px;
-      }
+  .header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
 
-      .section {
-        padding: 20px;
-      }
-    </style>
+  .header p {
+    font-size: 18px;
+    color: gray;
+    margin-bottom: 0;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: darkgray;
+    color: white;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+  .section {
+    padding: 50px;
+    text-align: center;
+  }
+
+  .section h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  .section p {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .section li {
+    width: 30%;
+    padding: 20px;
+    background-color: lightgray;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .section input[type="text"],
+  .section input[type="email"],
+  .section textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .section button[type="submit"] {
+    padding: 10px 20px;
+    background-color: darkgray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+</style>
+
   </head>
   <body>
     <header class="header">
