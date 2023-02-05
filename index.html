@@ -1,190 +1,70 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>My Portfolio Website</title>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <style>
-      /* Blue and White theme */
-      body {
-        background-color: #ffffff;
-        color: #007bff;
-        font-family: Arial, sans-serif;
-      }
-
-      /* Dark mode */
-      .dark-mode {
-        background-color: #343a40;
-        color: #ffffff;
-      }
-
-      /* Light mode */
-      .light-mode {
-        background-color: #ffffff;
-        color: #007bff;
-      }
-
-      /* Styles for each section */
-      .section {
-        padding: 2em;
-      }
-
-      h2 {
-        margin-bottom: 1em;
-      }
-
-      /* Experience section */
-      .experience {
-        background-color: #e9ecef;
-      }
-
-      /* Education section */
-      .education {
-        background-color: #d1ecf1;
-      }
-
-      /* Project section */
-      .projects {
-        background-color: #fff3cd;
-      }
-
-      /* Skills section */
-      .skills {
-        background-color: #c6e2ff;
-      }
-
-      /* Contact section */
-      .contact {
-        background-color: #ffc0cb;
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body class="light-mode">
-    <!-- Switch to toggle between light and dark mode -->
-    <input type="checkbox" id="dark-mode-switch">
-    <label for="dark-mode-switch">Dark mode</label>
-
-    <!-- Experience section -->
-    <div class="section experience">
-      <h2>Experience</h2>
-      <!-- Add your experience information here -->
-    </div>
-
-    <!-- Education section -->
-    <div class="section education">
-      <h2>Education</h2>
-      <!-- Add your education information here -->
-    </div>
-
-    <!-- Project section -->
-    <div class="section projects">
-      <h2>Projects</h2>
-      <!-- Add your project information here -->
-    </div>
-
-    <!-- Skills section -->
-    <div class="section skills">
-      <h2>Skills</h2>
-      <!-- Add your skills information here -->
-    </div>
-
-    <!-- Contact section -->
-    <div class="section contact">
-      <h2>Contact</h2>
-      <!-- Add your contact information here -->
-    </div>
-
-    <script>
-      const darkModeSwitch = document.getElementById("dark-mode-switch");
-      darkModeSwitch.addEventListener("change", function() {
-        const body = document.body;
-        if (this.checked) {
-          body.classList.remove("light-mode");
-          body.classList.add("dark-mode");
-        } else {
-          body.classList.remove("dark-mode");
-          body.classList.add("light-mode");
-        }
-      });
-    </script>
-  </body>
-</html>
-
-        background-color: #333;
-        color: #fff;
-        display: flex;
-        justify-content: center;
-        padding: 1em;
-        text-align: center;
-      }
-
-      /* Dark mode styles */
-      .dark-mode header {
-        background-color: #000;
-      }
-
-      .dark-mode main {
-        background-color: #333;
-        color: #fff;
-      }
-
-      .dark-mode footer {
-        background-color: #000;
-      }
-
-      /* Light mode styles */
-      .light-mode header {
-        background-color: #fff;
-        color: #333;
-      }
-
-      .light-mode main {
-        background-color: #fff;
-        color: #333;
-      }
-
-      .light-mode footer {
-        background-color: #fff;
-        color: #333;
-      }
-    </style>
-  </head>
-  <body class="light-mode">
+  <body>
     <header>
-      <h1>My Portfolio</h1>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
-      <section>
-        <h2>Welcome to my portfolio</h2>
-        <p>I am a web developer and this is my portfolio website.</p>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>My name is John Doe and I am a web developer. I have been working in the field for 5 years and have a passion for creating beautiful and functional websites.</p>
+        <p>I have a strong background in HTML, CSS, and JavaScript, and have experience working with various CMS and frameworks such as WordPress and React.</p>
+      </section>
+
+      <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>WordPress</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>My Projects</h2>
+        <ul>
+          <li>
+            <h3>Project 1</h3>
+            <p>A brief description of the project goes here.</p>
+            <img src="project1.jpg" alt="Project 1">
+          </li>
+          <li>
+            <h3>Project 2</h3>
+            <p>A brief description of the project goes here.</p>
+            <img src="project2.jpg" alt="Project 2">
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="submit-form.php" method="post">
+          <input type="text" name="name" placeholder="Your Name">
+          <input type="email" name="email" placeholder="Your Email">
+          <textarea name="message" placeholder="Your Message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
       </section>
     </main>
+
     <footer>
-      <p>Copyright &copy; 2023</p>
+      <p>Copyright © 2023 My Portfolio Website</p>
     </footer>
-    <button id="mode-toggle">Switch mode</button>
-    <script>
-      const toggle = document.querySelector('#mode-toggle');
-const body = document.querySelector('body');
-
-const currentMode = localStorage.getItem('mode') || 'light-mode';
-
-body.classList.add(currentMode);
-
-toggle.addEventListener('click', () => {
-  body.classList.toggle('light-mode');
-  body.classList.toggle('dark-mode');
-
-  const mode = body.classList.contains('light-mode') ? 'light-mode' : 'dark-mode';
-  localStorage.setItem('mode', mode);
-});
-</script>
-    </body>
-  </html>
+  </body>
+</html>
