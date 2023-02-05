@@ -1,103 +1,81 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: dodgerblue;
+  padding: 20px;
   display: flex;
-  justify-content: center;
-  padding: 1em 0;
+  align-items: center;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
+header h1 {
   margin: 0;
-  padding: 0;
-}
-
-nav a {
-  color: #fff;
-  display: block;
-  padding: 1em;
-  text-decoration: none;
+  font-size: 36px;
+  color: white;
 }
 
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 1em;
+  padding: 20px;
 }
 
-section {
-  background-color: fffff1;
-  border: 1px solid #ddd;
-  padding: 1em;
-  width: 600px;
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  overflow: hidden;
 }
 
-section h2 {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 1em;
-  padding-bottom: 0.5em;
-  text-align: center;
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-section img {
-  border: 1px solid #ddd;
-  display: block;
-  margin: 0 auto 1em auto;
-  max-width: 100%;
+.card h2 {
+  font-size: 24px;
+  margin: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  margin: 10px;
+  text-align: justify;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  padding: 1em 0;
+  background-color: lightgray;
+  padding: 20px;
+  text-align: center;
+  color: white;
 }
 
-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.dark-mode {
+  background-color: black;
+  color: white;
 }
 
-input, textarea {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  margin-bottom: 1em;
-  padding: 0.5em;
-  width: 100%;
+.dark-mode header, .dark-mode footer {
+  background-color: gray;
 }
 
-button[type="submit"] {
-  background-color: #333;
-  color: #fff;
-  padding: 0.5em;
+.dark-mode-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
- /* Light mode styles */
-      body {
-        background-color: white;
-        color: black;
-      }
-      /* Dark mode styles */
-      .dark-mode {
-        background-color: black;
-        color: white;
-      }
-      .dark-mode-toggle {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        background-color: white;
-        color: black;
-        padding: 10px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
