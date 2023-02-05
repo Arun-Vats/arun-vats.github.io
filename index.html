@@ -4,45 +4,111 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <style>
+      /* Blue and White theme */
       body {
+        background-color: #ffffff;
+        color: #007bff;
         font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
       }
 
-      header {
-        background-color: #333;
-        color: #fff;
-        display: flex;
-        justify-content: space-between;
-        padding: 1em;
+      /* Dark mode */
+      .dark-mode {
+        background-color: #343a40;
+        color: #ffffff;
       }
 
-      nav ul {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+      /* Light mode */
+      .light-mode {
+        background-color: #ffffff;
+        color: #007bff;
       }
 
-      nav a {
-        color: #fff;
-        text-decoration: none;
-        padding: 1em;
+      /* Styles for each section */
+      .section {
+        padding: 2em;
       }
 
-      main {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 1em;
+      h2 {
+        margin-bottom: 1em;
       }
 
-      section {
-        width: 100%;
-        padding: 1em;
+      /* Experience section */
+      .experience {
+        background-color: #e9ecef;
       }
 
-      footer {
+      /* Education section */
+      .education {
+        background-color: #d1ecf1;
+      }
+
+      /* Project section */
+      .projects {
+        background-color: #fff3cd;
+      }
+
+      /* Skills section */
+      .skills {
+        background-color: #c6e2ff;
+      }
+
+      /* Contact section */
+      .contact {
+        background-color: #ffc0cb;
+      }
+    </style>
+  </head>
+  <body class="light-mode">
+    <!-- Switch to toggle between light and dark mode -->
+    <input type="checkbox" id="dark-mode-switch">
+    <label for="dark-mode-switch">Dark mode</label>
+
+    <!-- Experience section -->
+    <div class="section experience">
+      <h2>Experience</h2>
+      <!-- Add your experience information here -->
+    </div>
+
+    <!-- Education section -->
+    <div class="section education">
+      <h2>Education</h2>
+      <!-- Add your education information here -->
+    </div>
+
+    <!-- Project section -->
+    <div class="section projects">
+      <h2>Projects</h2>
+      <!-- Add your project information here -->
+    </div>
+
+    <!-- Skills section -->
+    <div class="section skills">
+      <h2>Skills</h2>
+      <!-- Add your skills information here -->
+    </div>
+
+    <!-- Contact section -->
+    <div class="section contact">
+      <h2>Contact</h2>
+      <!-- Add your contact information here -->
+    </div>
+
+    <script>
+      const darkModeSwitch = document.getElementById("dark-mode-switch");
+      darkModeSwitch.addEventListener("change", function() {
+        const body = document.body;
+        if (this.checked) {
+          body.classList.remove("light-mode");
+          body.classList.add("dark-mode");
+        } else {
+          body.classList.remove("dark-mode");
+          body.classList.add("light-mode");
+        }
+      });
+    </script>
+  </body>
+</html>
+
         background-color: #333;
         color: #fff;
         display: flex;
