@@ -17,7 +17,6 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <button id="toggle-dark-mode">Toggle Dark Mode</button>
     </header>
 
     <main>
@@ -94,22 +93,21 @@
     <footer>
       <p>Copyright &copy; 2023 Arun Sharma</p>
     </footer>
+    <button class="dark-mode-toggle">Toggle</button>
     <script>
-      // Get the toggle button and body elements
-      const toggleBtn = document.querySelector("#toggle-dark-mode");
-      const body = document.querySelector("body");
-
-      // Add a click event listener to the toggle button
+// Get the toggle button and body element
+const toggleBtn = document.querySelector(".dark-mode-toggle");
+const body = document.querySelector("body");
       toggleBtn.addEventListener("click", () => {
-// Check if the body has the "dark-mode" class
-if (body.classList.contains("dark-mode")) {
-// Remove the "dark-mode" class to switch to light mode
-body.classList.remove("dark-mode");
-} else {
-// Add the "dark-mode" class to switch to dark mode
-body.classList.add("dark-mode");
-}
-});
+    // Check if the body has the "dark-mode" class
+    if (body.classList.contains("dark-mode")) {
+      // Remove the "dark-mode" class to switch to light mode
+      body.classList.remove("dark-mode");
+    } else {
+      // Add the "dark-mode" class to switch to dark mode
+      body.classList.add("dark-mode");
+    }
+  });
 </script>
   </body>
 </html>
