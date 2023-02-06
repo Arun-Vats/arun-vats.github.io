@@ -1,130 +1,125 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Light Mode */
+.light-mode {
+  background-color: #fff;
+  color: #000;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
+  background-color: #eee;
   padding: 20px;
+  text-align: center;
 }
 
 header h1 {
   margin: 0;
+  font-size: 36px;
 }
 
-header a {
-  color: #fff;
+header nav {
+  margin-top: 20px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  margin: 0 10px;
+}
+
+header nav a {
+  color: #000;
   text-decoration: none;
 }
 
-.section {
+main {
   padding: 20px;
 }
 
-.section-title {
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.works {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+section p {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-.work-item {
-  width: 31%;
-  margin-bottom: 20px;
-}
-
-.work-item img {
-  width: 100%;
-}
-
-form {
+section form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
 }
 
-form input,
-form textarea {
+section form input[type="text"],
+section form input[type="email"],
+section form textarea {
   padding: 10px;
   margin-bottom: 20px;
-  width: 100%;
+  font-size: 16px;
 }
 
-form button[type="submit"] {
-  background-color: #333;
+section form input[type="submit"] {
+  background-color: #000;
   color: #fff;
   padding: 10px 20px;
-  border: none;
+  font-size: 16px;
   cursor: pointer;
 }
 
-footer {
+/* Dark Mode */
+.dark-mode {
   background-color: #333;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
 }
 
-@media (max-width: 768px) {
-  .work-item {
-    width: 48%;
-  }
+.dark-mode header {
+  background-color: #444;
 }
 
-@media (max-width: 576px) {
-  .work-item {
-    width: 100%;
-  }
+.dark-mode header nav a {
+  color: #fff;
 }
+
+.dark-mode section form input[type="submit"] {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Dark/Light Mode Toggle Button */
 #switch-mode {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   background-color: transparent;
-  border: none;
-  outline: none;
+  border: 0;
+  color: inherit;
   cursor: pointer;
 }
 
-/* Add styles for dark mode */
-body.dark-mode {
-  background-color: #333;
-  color: #fff;
-}
-
-/* Hide the light icon in dark mode */
-body.dark-mode #light-icon {
+#dark-icon,
+#light-icon {
   display: none;
 }
 
-/* Show the dark icon in dark mode */
-body.dark-mode #dark-icon {
-  display: inline-block;
+.light-mode #light-icon {
+  display: inline;
 }
 
-/* Add styles for light mode */
-body.light-mode {
-  background-color: #fff;
-  color: #333;
-}
-
-/* Hide the dark icon in light mode */
-body.light-mode #dark-icon {
-  display: none;
-}
-
-/* Show the light icon in light mode */
-body.light-mode #light-icon {
-  display: inline-block;
+.dark-mode #dark-icon {
+  display: inline;
 }
