@@ -1,113 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <title>Arun Sharma</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>My Portfolio</title>
   </head>
   <body>
     <header>
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact-me">Contact</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-
     <main>
       <section id="about">
         <h2>About Me</h2>
-        <img src="profile.jpg" alt="Profile Picture">
-        <p>My name is Arun Sharma and I am a web developer. I have been working in the field for 5 years and have a passion for creating beautiful and functional websites.</p>
-        <p>I have a strong background in HTML, CSS, and JavaScript, and have experience working with various CMS and frameworks such as WordPress and React.</p>
-        <p>In my free time, I enjoy playing sports and traveling to new places.</p>
+        <p>Hello, my name is [Your Name] and I am a [Your Profession].</p>
       </section>
-
-      <section id="skills">
-        <h2>My Skills</h2>
+      <section id="work">
+        <h2>My Work</h2>
+        <p>Here is a selection of my recent work:</p>
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>WordPress</li>
-        </ul>
-        <p>I am always looking to expand my skillset and stay up-to-date with the latest technologies and trends in web development.</p>
-      </section>
-
-      <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-          <li>
-            <h3>Project 1</h3>
-            <p>A brief description of the project goes here.</p>
-            <img src="project1.jpg" alt="Project 1">
-            <p>This project was built using HTML, CSS, and JavaScript. I worked on this project with a team of 3 other developers and it was completed in 3 months.</p>
-          </li>
-          <li>
-            <h3>Project 2</h3>
-            <p>A brief description of the project goes here.</p>
-            <img src="project2.jpg" alt="Project 2">
-            <p>This project was built using React and was completed as a solo project in 1 month.</p>
-          </li>
+          <li><a href="#">Project 1</a></li>
+          <li><a href="#">Project 2</a></li>
+          <li><a href="#">Project 3</a></li>
         </ul>
       </section>
-
-           <section id="contact-me">
-        <h2>Contact Me</h2>
-        <ul>
-          <li>
-            <a href="mailto:asvats374@gmail.com">
-              <i class="fas fa-envelope"></i> asvats374@gmail.com
-            </a>
-          </li>
-          <li>
-            <a href="tel:8901170876">
-              <i class="fas fa-phone"></i> 8901170876
-            </a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/in/Arun-Vats">
-              <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/Arun-Vats">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </li>
-           <li>
-            <a href="https://www.instagram.com/Arun._.Vats/">
-              <i class="fab fa-Instagram"></i> Instagram
-            </a>
-          </li>
-        </ul>
+      <section id="contact">
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name">
+          <input type="email" name="email" placeholder="Your Email">
+          <textarea name="message" placeholder="Your Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
       </section>
     </main>
-
     <footer>
-      <p>Copyright &copy; 2023 Arun Sharma</p>
+      <p>Copyright &copy; [Your Name] [Current Year]</p>
     </footer>
-    <button class="dark-mode-toggle">Mode</button>
-    <script>
-// Get the toggle button and body element
-const toggleBtn = document.querySelector(".dark-mode-toggle");
-const body = document.querySelector("body");
-      toggleBtn.addEventListener("click", () => {
-    // Check if the body has the "dark-mode" class
-    if (body.classList.contains("dark-mode")) {
-      // Remove the "dark-mode" class to switch to light mode
-      body.classList.remove("dark-mode");
-    } else {
-      // Add the "dark-mode" class to switch to dark mode
-      body.classList.add("dark-mode");
-    }
-  });
-</script>
   </body>
 </html>
