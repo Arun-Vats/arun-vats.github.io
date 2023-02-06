@@ -9,6 +9,10 @@
     <title>My Portfolio</title>
   </head>
   <body>
+    <button id="switch-mode">
+      <i class="fas fa-moon" id="dark-icon"></i>
+      <i class="far fa-lightbulb" id="light-icon"></i>
+    </button>
     <header>
       <nav>
         <a href="#" class="logo">My Portfolio</a>
@@ -88,29 +92,13 @@
 <p>© [Your Name] 2023</p>
 </footer>
     <script>
-    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-const currentTheme = localStorage.getItem('theme');
+    const switchModeButton = document.querySelector("#switch-mode");
 
-if (currentTheme) {
-  document.documentElement.setAttribute('data-theme', currentTheme);
-
-  if (currentTheme === 'dark') {
-    toggleSwitch.checked = true;
-  }
-}
-
-function switchTheme(e) {
-  if (e.target.checked) {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
-  }
-  else {
-    document.documentElement.setAttribute('data-theme', 'light');
-    localStorage.setItem('theme', 'light');
-  }    
-}
-
-toggleSwitch.addEventListener('change', switchTheme, false);
+switchModeButton.addEventListener("click", function() {
+  const body = document.querySelector("body");
+  body.classList.toggle("dark-mode");
+  body.classList.toggle("light-mode");
+});
     </script>
   </body>
 </html>
