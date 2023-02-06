@@ -97,3 +97,34 @@ footer {
     width: 100%;
   }
 }
+/* Add styles for dark mode */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Hide the light icon in dark mode */
+body.dark-mode #light-icon {
+  display: none;
+}
+
+/* Show the dark icon in dark mode */
+body.dark-mode #dark-icon {
+  display: inline-block;
+}
+
+/* Add styles for light mode */
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Hide the dark icon in light mode */
+body.light-mode #dark-icon {
+  display: none;
+}
+
+/* Show the light icon in light mode */
+body.light-mode #light-icon {
+  display: inline-block;
+}
