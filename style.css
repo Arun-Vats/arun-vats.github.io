@@ -21,16 +21,6 @@ header a {
   text-decoration: none;
 }
 
-.dark-mode {
-  background-color: #333;
-  color: #fff;
-}
-
-.light-mode {
-  background-color: #fff;
-  color: #333;
-}
-
 .section {
   padding: 20px;
 }
@@ -97,6 +87,16 @@ footer {
     width: 100%;
   }
 }
+#switch-mode {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 /* Add styles for dark mode */
 body.dark-mode {
   background-color: #333;
