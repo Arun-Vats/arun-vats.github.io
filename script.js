@@ -1,4 +1,4 @@
-<script>
+
 const modeSwitch = document.getElementById("mode-switch");
 const icon = modeSwitch.querySelector("i");
 
@@ -12,4 +12,3 @@ modeSwitch.addEventListener("click", function() {
     icon.classList.add("fa-sun-o");
   }
 });
-</script>
