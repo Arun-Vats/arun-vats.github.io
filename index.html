@@ -125,7 +125,7 @@ footer .col-md-4 {
 text-align: center;
 }
 }
-      #contact {
+    #contact {
   padding: 80px 0;
   background-color: #f2f2f2;
 }
@@ -179,19 +179,29 @@ text-align: center;
 }
 
 #contact form button[type="submit"]:hover {
-  background-color: #fff;
-  color: #333;
+  background-#contact form button[type="submit"]:hover {
+  background-color: #444;
+  transition: background-color 0.3s ease-in-out;
 }
 
-@media (min-width: 992px) {
-  #contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #contact form {
-    max-width: 50%;
-  }
+#contact h3 {
+  margin-top: 60px;
+  font-weight: bold;
+}
+
+#contact ul {
+  list-style: none;
+  margin-top: 30px;
+  padding-left: 0;
+}
+
+#contact ul li {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#contact ul li i {
+  margin-right: 10px;
 }
     </style>
   </head>
@@ -260,24 +270,36 @@ text-align: center;
 </div>
 </section>
 <section id="contact">
-<div class="container">
-<h2>Get in Touch</h2>
-<form>
-<div class="form-group">
-<label for="name">Name</label>
-<input type="text" class="form-control" id="name" placeholder="Your Name">
-</div>
-<div class="form-group">
-<label for="email">Email</label>
-<input type="email" class="form-control" id="email" placeholder="Your Email">
-</div>
-<div class="form-group">
-<label for="message">Message</label>
-<textarea class="form-control" id="message" rows="4" placeholder="Write Message Here"></textarea>
-</div>
-<button type="submit" class="btn btn-primary">Submit</button>
-</form>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Get in Touch</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-control"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h3>Contact Information</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> 123 Main St, City, State 12345</li>
+          <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+          <li><i class="fas fa-envelope"></i> info@example.com</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 <footer>
         <p class="text-center">Copyright © 2022 Arun Sharma</p>
