@@ -6,6 +6,7 @@
     <title>Arun Sharma</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <style>
       /* Add your custom CSS styles here */
       body {
@@ -237,7 +238,58 @@ text-align: center;
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
+
+#skills {
+  padding: 80px 0;
+}
+
+.skills-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-box {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: calc(25% - 40px);
+  text-align: center;
+  margin: 20px;
+}
+
+.skill-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.skill-progress-bar {
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  width: 100%;
+  position: relative;
+}
+
+.skill-progress-bar:before {
+  content: "";
+  height: 100%;
+  background-color: #333;
+  border-radius: 5px;
+  width: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.skill-box:hover .skill-progress-bar:before {
+  width: 90%;
+  transition: width 0.3s ease-in-out;
+}
 </style>
+
 
   </head>
   <body>
@@ -267,6 +319,30 @@ text-align: center;
 </div>
 </div>
 </section>
+    <section id="skills">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-inner">
+      <div class="skill-box">
+        <h3 class="skill-title">JavaScript</h3>
+        <div class="skill-progress-bar" style="width: 90%"></div>
+      </div>
+      <div class="skill-box">
+        <h3 class="skill-title">React</h3>
+        <div class="skill-progress-bar" style="width: 85%"></div>
+      </div>
+      <div class="skill-box">
+        <h3 class="skill-title">Node.js</h3>
+        <div class="skill-progress-bar" style="width: 80%"></div>
+      </div>
+      <div class="skill-box">
+        <h3 class="skill-title">CSS</h3>
+        <div class="skill-progress-bar" style="width: 75%"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section>
 <div class="container">
 <h2>Featured Projects</h2>
