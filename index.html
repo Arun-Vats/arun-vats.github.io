@@ -209,44 +209,67 @@ text-align: center;
 #contact ul li i {
   margin-right: 10px;
 }
-      #featured {
+    #about {
   background-color: #f2f2f2;
   padding: 80px 0;
 }
 
-#featured h2 {
+#about h2 {
   margin-bottom: 60px;
 }
 
-.project-card {
-  display: inline-block;
+#about .about-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 60px;
+}
+
+#skills {
   background-color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#skills h2 {
+  margin-bottom: 60px;
+}
+
+.skill-box {
+  display: inline-block;
   width: calc(33.33% - 40px);
   padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   text-align: center;
   margin: 20px;
-  transition: all 0.3s ease-in-out;
 }
 
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
-}
-
-.project-card h3 {
+.skill-box h3 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.project-card p {
+.skill-box p {
   font-size: 16px;
-  margin-bottom: 20px;
   color: #999;
+  margin-bottom: 20px;
 }
 
-.project-card .btn {
+.skill-box .skill-progress {
+  height: 10px;
+background-color: #eee;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.skill-box .skill-progress-bar {
+  height: 100%;
+  background-color: #333;
+  border-radius: 5px;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.skill-box .btn {
   background-color: #333;
   color: #fff;
   padding: 10px 20px;
@@ -258,7 +281,7 @@ text-align: center;
   transition: all 0.3s ease-in-out;
 }
 
-.project-card .btn:hover {
+.skill-box .btn:hover {
   background-color: #444;
   transition: background-color 0.3s ease-in-out;
 }
