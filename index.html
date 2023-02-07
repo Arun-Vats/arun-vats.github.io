@@ -238,8 +238,6 @@ text-align: center;
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
-
-<style>
 #skills {
   padding: 60px 0;
   text-align: center;
@@ -275,11 +273,38 @@ text-align: center;
   color: #333;
   line-height: 1.5;
 }
+      <style>
+#about {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.about-text {
+  text-align: left;
+  margin-left: 40px;
+  width: 50%;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
 </style>
-
-</style>
-
-
   </head>
   <body>
     <header>
@@ -287,26 +312,17 @@ text-align: center;
         <h1>Arun Sharma</h1>
       </div>
     </header>
-    <section>
-      <div class="container">
-        <div class="row">
-<div class="col-md-6">
-<h2>About Me</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, lorem id faucibus accumsan, ipsum elit commodo erat, eget rhoncus lorem velit vel sem. Sed vel nisl vel velit vestibulum congue. Nam luctus dapibus quam, eget commodo tellus blandit eget. In hac habitasse platea dictumst. Nam interdum bibendum diam, vel suscipit nulla pretium non. Aliquam erat volutpat. Nunc a eros et turpis aliquet bibendum ac vel justo. Nullam iaculis eros id lacus luctus scelerisque. Sed vitae tellus in enim dapibus egestas.</p>
-</div>
-<div class="col-md-6">
-<h2>Skills</h2>
-<ul class="skill-list">
-<li>JavaScript</li>
-<li>HTML</li>
-<li>CSS</li>
-<li>React</li>
-<li>Node.js</li>
-<li>Express</li>
-</ul>
+    <section id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-inner">
+      <img src="your-profile-pic.jpg" alt="Profile Picture">
+      <div class="about-text">
+<p>Hi there! I'm a software developer with 5 years of experience in building web applications. I have a passion for creating clean, user-friendly, and efficient software. My expertise lies in HTML, CSS, JavaScript, React, and Node.js. I'm always looking to take on new challenges and learn new technologies.</p>
+<p>When I'm not coding, you can find me hiking, reading, or trying new foods. I'm a big fan of outdoor activities and learning new things.</p>
 </div>
 </div>
-</div>
+  </div>
 </section>
 <section id="skills">
   <div class="container">
