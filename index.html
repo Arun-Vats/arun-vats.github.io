@@ -1,194 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arun Sharma</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <style>
-    /* Light Mode */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-      color: #000;
-      transition: background-color 0.5s ease, color 0.5s ease;
-    }
-  
-    header {
-      background-color: #eee;
-      padding: 20px;
-      text-align: center;
-      transition: background-color 0.5s ease;
-    }
-  
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
-  
-    header nav {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-    }
-  
-    header nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-    }
-  
-    header nav li {
-      margin: 0 10px;
-    }
-  
-    header nav a {
-      color: #000;
-      text-decoration: none;
-      transition: color 0.5s ease;
-    }
-  
-    main {
-      padding: 20px;
-    }
-  
-    section {
-      margin-bottom: 20px;
-    }
-  
-    section h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-  
-    section p {
-      font-size: 16px;
-      line-height: 1.5;
-    }
-  
-    section form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    section form input[type="text"],
-    section form input[type="email"],
-    section form textarea {
-      padding: 10px;
-      margin-bottom: 20px;
-      font-size: 16px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      width: 300px;
-    }
-  
-    section form input[type="submit"] {
-      background-color: #000;
-      color: #fff;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 5px;
-border: none;
-cursor: pointer;
-transition: background-color 0.5s ease, color 0.5s ease;
-}
-    section form input[type="submit"]:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-footer {
-  background-color: #eee;
-  padding: 20px;
-  text-align: center;
-  transition: background-color 0.5s ease;
-}
-
-footer p {
-  margin: 0;
-  font-size: 16px;
-}
-
-/* Dark Mode */
-.dark-mode {
-  background-color: #333;
-  color: #fff;
-}
-
-.dark-mode header {
-  background-color: #444;
-}
-
-.dark-mode header nav a {
-  color: #fff;
-}
-
-.dark-mode section form input[type="submit"] {
-  background-color: #fff;
-  color: #000;
-}
-
-.dark-mode section form input[type="submit"]:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-.dark-mode footer {
-  background-color: #444;
-}
- </style>
-</head>
-<body>
-  <header>
-    <h1>Arun Sharma</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <button id="dark-light-mode-btn">
-      <i class="fas fa-adjust"></i>
-    </button>
-  </header>
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>I am Arun Sharma and As a third-year B.Tech student, I am fully committed to my goal of becoming a software developer. With a passion for technology and a drive to succeed, I have dedicated myself to my studies and to learning as much as I can about software development.
-
-Throughout my B.Tech program, I have been consistently pushing myself to grow and expand my knowledge, always looking for opportunities to learn and improve. My strong academic background and my experience from my 3-year diploma have given me a solid foundation to build upon, and I am confident in my ability to succeed in this challenging field.
-
-I am confident that with my hard work and dedication, I will be able to achieve my goal of becoming a successful software developer and make a meaningful impact in this exciting field. I am looking forward to the opportunities and experiences that lie ahead, and am determined to make the most of every opportunity to learn and grow.</p>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Software Developer Portfolio</title>
+    <style>
+      /* Add your CSS styles here */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+      }
+      section {
+        padding: 20px;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .project {
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .project h3 {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Software Developer Portfolio</h1>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          bibendum, leo non tempor malesuada, ante quam commodo risus, eu
+          tincidunt massa tellus at augue.
+        </p>
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            bibendum, leo non tempor malesuada, ante quam commodo risus, eu
+            tincidunt massa tellus at augue.
+          </p>
+        </div>
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            bibendum, leo non tempor malesuada, ante quam commodo risus, eu
+            tincidunt massa tellus at augue.
+          </p>
+        </div>
+      </div>
     </section>
-    <section id="services">
-      <h2>Projects</h2>
-      <p>Projects Coming Soon</p>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <form action="#">
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="Message"></textarea>
-        <input type="submit" value="Send">
-      </form>
-    </section>
-  </main>
-  <footer>
-    <p>Copyright © Arun Sharma 2023</p>
-  </footer>
-  <script>
-    const btn = document.getElementById("dark-light-mode-btn");
-    const body = document.body;
-    
-    btn.addEventListener("click", function() {
-      body.classList.toggle("dark-mode");
-    });
-  </script>
-</body>
+  </body>
 </html>
