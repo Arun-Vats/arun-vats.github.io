@@ -1,69 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Premium Portfolio</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Your Name</h1>
-      <p>Web Developer</p>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <title>My Premium Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>Write a brief description of yourself and your skillset here.</p>
-      </section>
-      <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-          <li>
-            <h3>Web Developer at XYZ Company</h3>
-            <p>Description of your experience and accomplishments at this job.</p>
-          </li>
-          <li>
-            <h3>Web Developer at ABC Company</h3>
-            <p>Description of your experience and accomplishments at this job.</p>
-          </li>
-        </ul>
-      </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li>
-            <h3>Project 1</h3>
-            <p>Brief description and live demo or Github link.</p>
-          </li>
-          <li>
-            <h3>Project 2</h3>
-            <p>Brief description and live demo or Github link.</p>
-          </li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h2>Get in Touch</h2>
-        <form action="submit.php" method="post">
-          <input type="text" name="name" placeholder="Your Name">
-          <input type="email" name="email" placeholder="Your Email">
-          <textarea name="message" placeholder="Your Message"></textarea>
-          <input type="submit" value="Send Message">
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright &copy; 2023 Your Name</p>
-    </footer>
-  </body>
+  </header>
+  <main>
+    <section id="about">
+      <h1>About Me</h1>
+      <p>Hello, my name is [Your Name]. I am a [Your Profession].</p>
+    </section>
+    <section id="projects">
+      <h1>My Projects</h1>
+      <ul>
+        <li>Project 1</li>
+        <li>Project 2</li>
+        <li>Project 3</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <form action="submit-form.php" method="post">
+        <input type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email">
+        <textarea name="message" placeholder="Message"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright &copy; [Your Name] [Year]. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
