@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<title>My Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+/* Global Styles */
+
+/* Set default styles for HTML tags */
+html {
+    font-size: 16px;
+}
+
+/* Set default font family */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #444;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Set a max width for the content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Set styles for headings */
+h1, h2, h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Set styles for links */
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #f2f2f2;
+    padding: 1rem 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: #0077cc;
+    color: #fff;
+}
+
+/* Section Styles */
+
+section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+section:nth-of-type(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer div {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+    
+    nav li {
+        display: block;
+        margin-bottom: 1rem;
+    }
+}
+/* Social Media Section Styles */
+#social-media {
+  background-color: #f2f2f2;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+#social-media h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#social-media ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#social-media li {
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 2rem;
+}
+
+#social-media a {
+  color: #0077cc;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+#social-media a:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0077cc;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.4s ease-out;
+}
+
+#social-media a:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#social-media i {
+  display: block;
+}
+
+/* Social Media Icons */
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+.fa-twitter:before {
+  content: "\f099";
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+.fa-linkedin:before {
+  content: "\f08c";
+}
+
+/* Font Awesome Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+#contact {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+#contact h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+#contact form input,
+#contact form textarea {
+  padding: 15px;
+  border: none;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+#contact form textarea {
+  height: 150px;
+}
+
+#contact form button {
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+#contact form button:hover {
+  background-color: #26a69a;
+}
+#skills {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+#skills h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.skills-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill {
+  width: calc(33.33% - 40px);
+  margin: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.skill i {
+  display: block;
+  font-size: 80px;
+  margin: 0 auto;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.skill p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.skill:hover i {
+  color: #26a69a;
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  .skill {
+    width: calc(50% - 40px);
+  }
+}
+#portfolio {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+#portfolio h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  width: calc(33.33% - 40px);
+  margin: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-image {
+  position: relative;
+}
+
+.portfolio-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(38, 166, 154, 0.8);
+}
+
+.portfolio-overlay a {
+  color: #fff;
+  display: inline-block;
+margin: 0 10px;
+transition: all 0.3s ease-in-out;
+}
+
+.portfolio-overlay a:hover {
+transform: scale(1.2);
+}
+
+.portfolio-item:hover .portfolio-image img {
+transform: scale(1.1);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+opacity: 1;
+}
+
+.portfolio-item h3 {
+font-size: 24px;
+font-weight: 700;
+margin: 20px 0 10px;
+color: #333;
+}
+
+.portfolio-item p {
+font-size: 16px;
+line-height: 1.5;
+margin-bottom: 20px;
+color: #777;
+}
+
+.fa-search,
+.fa-link {
+transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 768px) {
+.portfolio-item {
+width: calc(50% - 40px);
+}
+}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#contact">Contact Me</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section id="home">
+		<h1>Welcome to My Portfolio</h1>
+		<p>Insert your home page content here.</p>
+	</section>
+	
+	<section id="about">
+		<h2>About Me</h2>
+		<p>Insert your about me content here.</p>
+	</section>
+	<section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-wrapper">
+      <div class="portfolio-item">
+        <div class="portfolio-image">
+          <img src="https://via.placeholder.com/350x200" alt="Portfolio Item 1">
+          <div class="portfolio-overlay">
+            <a href="#"><i class="fas fa-search fa-2x"></i></a>
+            <a href="#"><i class="fas fa-link fa-2x"></i></a>
+          </div>
+        </div>
+        <h3>Project Title 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae turpis eu ex tincidunt efficitur.</p>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-image">
+          <img src="https://via.placeholder.com/350x200" alt="Portfolio Item 2">
+          <div class="portfolio-overlay">
+            <a href="#"><i class="fas fa-search fa-2x"></i></a>
+            <a href="#"><i class="fas fa-link fa-2x"></i></a>
+          </div>
+        </div>
+        <h3>Project Title 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae turpis eu ex tincidunt efficitur.</p>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-image">
+          <img src="https://via.placeholder.com/350x200" alt="Portfolio Item 3">
+          <div class="portfolio-overlay">
+            <a href="#"><i class="fas fa-search fa-2x"></i></a>
+            <a href="#"><i class="fas fa-link fa-2x"></i></a>
+          </div>
+        </div>
+        <h3>Project Title 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae turpis eu ex tincidunt efficitur.</p>
+      </div>
+    </div>
+  </section>
+  
+	<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-wrapper">
+      <div class="skill">
+        <i class="fas fa-code fa-3x"></i>
+        <h3>Coding</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae turpis eu ex tincidunt efficitur.</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-palette fa-3x"></i>
+        <h3>Design</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae turpis eu ex tincidunt efficitur.</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-mobile-alt fa-3x"></i>
+        <h3>Responsive Design</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae turpis eu ex tincidunt efficitur.</p>
+      </div>
+    </div>
+  </section>
+  
+	<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>  
+  
+  <section id="social-media">
+    <h2>Follow Me</h2>
+    <ul>
+      <li>
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      </li>
+      <li>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      </li>
+      <li>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      </li>
+      <li>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </li>
+    </ul>
+  </section>  
+	<footer>
+		<div>
+			<p>Made By Arun Sharma with OpenAI</p>
+		</div>
+	</footer>
+</body>
+</html>
