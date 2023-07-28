@@ -131,15 +131,17 @@ drive positive change.</p>
     <img id="modalImage" src="" alt="Certificate">
   </div>
 
-	<section id="contact">
+<section id="contact">
     <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
+    <form action="https://formspree.io/your_email@example.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
     </form>
-  </section>  
+</section>
+    
+
   
   <section id="social-media">
     <h2>Follow Me</h2>
