@@ -520,5 +520,11 @@ width: calc(50% - 40px);
       font-size: 24px;
       cursor: pointer;
     }
+#home {
+  background-image: url('path/to/your-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 </style>
