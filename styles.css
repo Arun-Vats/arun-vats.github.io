@@ -526,5 +526,8 @@ width: calc(50% - 40px);
   background-repeat: no-repeat;
   background-position: center;
 }
+#home {
+  color: white; 
+}
 
 </style>
