@@ -521,7 +521,7 @@ width: calc(50% - 40px);
       cursor: pointer;
     }
 #home {
-  background-image: url('path/to/your-image.jpg');
+  background-image: url('back.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
