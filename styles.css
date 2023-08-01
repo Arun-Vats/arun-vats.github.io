@@ -51,7 +51,15 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Set the background color as needed */
+    padding: 10px; /* Add padding for better visibility */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+  }
 /* Header Styles */
 
 header {
