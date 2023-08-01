@@ -51,7 +51,12 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Header Styles */
+
 header {
+    background-color: #f2f2f2;
+    padding: 1rem 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -59,12 +64,6 @@ header {
     background-color: #ffffff; /* Set the background color as needed */
     padding: 10px; /* Add padding for better visibility */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
-  }
-/* Header Styles */
-
-header {
-    background-color: #f2f2f2;
-    padding: 1rem 0;
 }
 
 nav ul {
